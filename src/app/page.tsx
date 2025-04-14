@@ -1,25 +1,107 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Image from "next/image";
+import VideoGallery from "@/components/VideoGallery";
 
 export default function Home() {
   return (
-    <div>
-      <Header />
-      <main>
-        <h1 className="text-3xl font-bold underline">SGB Energy </h1>
-        <p className="text-lg">Connect To Energy </p>
-        <p className="text-lg">
-          We provide a wide range of services to help you save energy and reduce
-          costs.
-        </p>
-        <p>
-          <span className="font-extrabold">Energieversorgung</span>
-          <span> </span>
-          <span>für Gewerbe und Industrie</span>
-        </p>
+    <div className="mx-auto w-full">
+      <main className="w-full">
+        <div className="hero-video h-[90vh] w-full overflow-hidden md:h-screen">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="h-full object-cover"
+            style={{ zIndex: -1 }}
+          >
+            <source src="/assets/Website_Energie-1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div className="hero-content bg-slate-100 py-16 md:h-[90vh]">
+          <div className="container mx-auto flex h-full flex-col justify-evenly px-4 md:px-8">
+            <div className="mb-16 text-center">
+              <h1 className="mb-4 text-2xl font-bold text-[#002B5C] md:text-[2.5rem]">
+                ENERGIEVERSORGUNG
+              </h1>
+              <h2 className="mb-8 text-xl text-[#002B5C] md:text-[2rem]">
+                für Gewerbe und Industrie
+              </h2>
+              <h3 className="mb-8 text-xl font-semibold text-[#002B5C]">
+                Ihre Strom- und Gasversorgung
+              </h3>
+              <p className="mx-auto max-w-4xl text-lg">
+                Die SGB Energie GmbH verbindet{" "}
+                <span className="font-semibold">günstige Börsentarife</span> mit{" "}
+                <span className="font-semibold">nachhaltigen Lösungen</span> und{" "}
+                <span className="font-semibold">persönlicher Beratung</span>{" "}
+                durch ein deutschlandweites Netzwerk von über 500 Experten –
+                Ihre Energie, einfach besser.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+              <div className="text-center">
+                <div className="mx-auto mb-4 h-24 w-24">
+                  <Image
+                    src="/assets/home2.svg"
+                    alt="Kosten minimieren"
+                    width={96}
+                    height={96}
+                    className="object-contain"
+                  />
+                </div>
+                <h4 className="mb-2 text-lg font-semibold">KOSTEN</h4>
+                <p className="text-xl font-bold text-[#002B5C]">MINIMIEREN</p>
+              </div>
+
+              <div className="text-center">
+                <div className="mx-auto mb-4 h-24 w-24">
+                  <Image
+                    src="/assets/home3.svg"
+                    alt="Einsparungen maximieren"
+                    width={96}
+                    height={96}
+                    className="object-contain"
+                  />
+                </div>
+                <h4 className="mb-2 text-lg font-semibold">EINSPARUNGEN</h4>
+                <p className="text-xl font-bold text-[#002B5C]">MAXIMIEREN</p>
+              </div>
+
+              <div className="text-center">
+                <div className="mx-auto mb-4 h-24 w-24">
+                  <Image
+                    src="/assets/home7.svg"
+                    alt="Persönliche Beratung"
+                    width={96}
+                    height={96}
+                    className="object-contain"
+                  />
+                </div>
+                <h4 className="mb-2 text-xl font-bold text-[#002B5C]">
+                  PERSÖNLICHE
+                </h4>
+                <p className="text-lg">BERATUNG</p>
+              </div>
+
+              <div className="text-center">
+                <div className="mx-auto mb-4 h-24 w-24">
+                  <Image
+                    src="/assets/home8.svg"
+                    alt="360° Versorgung"
+                    width={96}
+                    height={96}
+                    className="object-contain"
+                  />
+                </div>
+                <h4 className="mb-2 text-xl font-bold text-[#002B5C]">360°</h4>
+                <p className="text-lg">VERSORGUNG</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <VideoGallery />
       </main>
-      {/* <Footer /> */}
-      <Footer />
     </div>
   );
 }
