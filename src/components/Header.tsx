@@ -6,6 +6,8 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import { MdOutlinePhone } from "react-icons/md";
 import { TbClockHour9 } from "react-icons/tb";
+import Image from "next/image";
+
 interface MenuItem {
   name: string;
   path?: string;
@@ -147,8 +149,16 @@ const Header = () => {
       className="sticky top-0 flex flex-col bg-slate-900 text-white shadow-lg"
     >
       <div className="flex h-[10vh] items-center justify-between px-4 lg:mx-auto lg:w-full lg:max-w-7xl">
-        <div className="w-40 text-2xl font-bold transition-colors duration-200 hover:text-green-500">
-          SGB Energy
+        <div className="w-40">
+          <Link href="/">
+            <Image
+              src="/assets/SGB-Energie-Logo-white_web-2.png"
+              alt="SGB Energy Logo"
+              width={100}
+              height={40}
+              className="transition-opacity duration-200 hover:opacity-90"
+            />
+          </Link>
         </div>
 
         {/* Desktop Menu */}
