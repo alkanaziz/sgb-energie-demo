@@ -4,7 +4,7 @@ import { TfiAnnouncement, TfiEmail } from "react-icons/tfi";
 
 const Sidebar = () => {
   return (
-    <nav className="sticky bottom-0 h-[10vh] md:right-0 md:h-screen md:w-0">
+    <nav className="fixed bottom-0 z-30 h-[10vh] w-full md:right-0 md:h-screen md:w-0">
       <div className="right-0 flex h-full items-center justify-between bg-green-700 px-15 text-white md:fixed md:top-1/2 md:h-48 md:w-[56px] md:-translate-y-1/2 md:transform md:flex-col md:gap-8 md:bg-transparent md:px-3">
         <div className="flex h-[56px] w-[56px] items-center justify-center md:relative md:mb-8 md:w-full">
           <Link
@@ -27,7 +27,7 @@ const Sidebar = () => {
           >
             <div className="flex w-full items-center justify-center gap-4 md:justify-start md:pl-3">
               <TfiEmail className="h-8 w-8 min-w-[32px]" />
-              <span className="hidden md:inline-block md:w-0 md:font-extrabold md:opacity-0 md:transition-all md:duration-500 md:ease-in-out md:group-hover:w-auto md:group-hover:opacity-100">
+              <span className="hidden overflow-hidden md:inline-block md:w-0 md:font-extrabold md:opacity-0 md:transition-all md:duration-500 md:ease-in-out md:group-hover:w-auto md:group-hover:opacity-100">
                 KONTAKT
               </span>
             </div>
