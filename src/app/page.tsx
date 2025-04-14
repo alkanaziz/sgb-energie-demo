@@ -5,13 +5,13 @@ export default function Home() {
   return (
     <div className="mx-auto w-full">
       <main className="w-full">
-        <div className="hero-video h-[90vh] w-full overflow-hidden md:h-screen">
+        <div className="hero-video relative h-[90vh] w-screen overflow-hidden md:h-screen">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="h-full object-cover"
+            className="absolute inset-0 h-full w-full object-cover"
             style={{ zIndex: -1 }}
           >
             <source src="/assets/Website_Energie-1.mp4" type="video/mp4" />
