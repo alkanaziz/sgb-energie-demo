@@ -146,7 +146,7 @@ const Header = () => {
   return (
     <header
       ref={headerRef}
-      className="sticky top-0 flex flex-col bg-slate-900 text-white shadow-lg"
+      className="fixed top-0 z-50 flex w-full flex-col bg-slate-900 text-white shadow-lg"
     >
       <div className="flex h-[10vh] items-center justify-between px-4 lg:mx-auto lg:w-full lg:max-w-7xl">
         <div className="w-40">
