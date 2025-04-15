@@ -5,7 +5,6 @@ interface UnderConstructionProps {
   title: string;
   description?: string;
   icon?: React.ReactNode;
-  availableDate?: string;
   listItems?: string[];
   contactEmail?: string;
 }
@@ -14,7 +13,6 @@ const UnderConstruction: React.FC<UnderConstructionProps> = ({
   title,
   description = "Diese Seite befindet sich derzeit im Aufbau und wird in Kürze verfügbar sein.",
   icon = <FaTools className="h-10 w-10" />,
-  availableDate = "2025",
   listItems = [],
   contactEmail,
 }) => {
@@ -30,14 +28,6 @@ const UnderConstruction: React.FC<UnderConstructionProps> = ({
           </h1>
           <div className="mx-auto mb-8 h-1 w-24 bg-[#94C11F]"></div>
           <p className="mb-6 max-w-2xl text-lg text-slate-700">{description}</p>
-
-          {availableDate && (
-            <div className="my-8 flex flex-wrap items-center justify-center gap-6">
-              <div className="rounded-lg bg-[#94C11F] p-3 text-white">
-                Verfügbar im {availableDate}
-              </div>
-            </div>
-          )}
         </div>
 
         {(listItems.length > 0 || contactEmail) && (
