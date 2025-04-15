@@ -156,7 +156,7 @@ const VideoCard = ({
         </div>
       </div>
       <div
-        className={`text flex flex-col justify-center bg-slate-900 p-8 text-center text-white transition-all duration-300 hover:bg-slate-800 ${isVideo3 ? "md:absolute md:top-1/2 md:right-0 md:w-1/3 md:-translate-y-1/2 md:bg-transparent" : "w-full"} ${isVideo3 && isPlaying ? "hidden" : ""}`}
+        className={`text flex flex-col justify-center bg-slate-900 p-8 text-center text-white transition-all duration-300 hover:bg-slate-800 ${isVideo3 ? "md:absolute md:top-1/2 md:right-0 md:w-1/3 md:-translate-y-1/2 md:bg-transparent" : "w-full"} ${isVideo3 && isPlaying ? "md:hidden" : ""}`}
       >
         <p className="mb-4 text-xl font-light">"{video.quote}"</p>
         <p className="text-green-500">{video.author}</p>
