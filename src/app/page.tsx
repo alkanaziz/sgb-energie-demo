@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="mx-auto w-full">
       <main className="w-full">
-        <div className="hero-video relative h-[90vh] w-screen overflow-hidden md:h-screen">
+        <div className="hero-video relative h-[90vh] w-full overflow-hidden md:h-screen">
           <video
             autoPlay
             loop
