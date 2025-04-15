@@ -3,7 +3,7 @@ import Link from "next/link"; // Assuming you're using Next.js; for React Router
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-800 pt-10 pb-30 text-white md:pt-10 md:pb-5">
+    <footer className="bg-gray-800 pt-10 pb-24 text-white md:pt-10 md:pb-5">
       <div className="container mx-auto px-4">
         {/* Social Media Section */}
         <div className="mb-8 text-center">
@@ -244,7 +244,7 @@ const Footer: React.FC = () => {
         <hr className="my-6 border-gray-600" />
 
         {/* Copyright section */}
-        <div className="text-slate-400">
+        <div className="text-center text-slate-400 md:text-left">
           <p>2025 © SGB Energie GmbH</p>
         </div>
       </div>
