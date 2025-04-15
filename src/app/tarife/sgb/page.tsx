@@ -7,7 +7,6 @@ export default function SgbTarife() {
       title="SGB TARIFE IN ENTWICKLUNG"
       description="Unsere SGB Tarife-Seite wird derzeit entwickelt. Hier finden Sie bald detaillierte Informationen zu unseren Stromtarifen und Angeboten."
       icon={<FaBolt className="h-10 w-10" />}
-      availableDate="März 2025"
       listItems={[
         "Komplette Übersicht aller SGB Tarife",
         "Tarifrechner und Vergleichsmöglichkeiten",

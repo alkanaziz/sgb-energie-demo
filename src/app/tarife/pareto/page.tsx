@@ -7,7 +7,6 @@ export default function ParetoTarif() {
       title="PARETO TARIF IN ENTWICKLUNG"
       description="Der PARETO Tarif richtet sich an Unternehmen ab 4,5 GWh und nutzt eine clevere Kombination aus Terminmarkt, Spotmarkt, Base- und Peakbänder, Monats-, Quartals- oder Jahrestranchen und OTC-Limit-Order."
       icon={<FaCogs className="h-10 w-10" />}
-      availableDate="Juni 2025"
       listItems={[
         "Maßgeschneiderte Lösung für Großverbraucher",
         "Verfügbar für Strom und Gas",

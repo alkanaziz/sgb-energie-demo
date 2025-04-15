@@ -13,7 +13,6 @@ const NewsPage = () => {
       title="News & Aktuelles"
       description="Unsere Newsseite befindet sich im Aufbau. Hier finden Sie bald aktuelle Informationen über SGB Energie, Branchennachrichten und Energiethemen."
       icon={<FaNewspaper className="h-10 w-10" />}
-      availableDate="März 2025"
       listItems={[
         "Aktuelle Unternehmensnachrichten von SGB Energie",
         "Updates zu neuen Energieprodukten und Services",

@@ -14,7 +14,6 @@ const FAQPage = () => {
       title="FAQ - Häufig gestellte Fragen"
       description="Unsere FAQ-Seite befindet sich derzeit im Aufbau. Hier finden Sie bald Antworten auf die häufigsten Fragen zu unseren Energieprodukten und Dienstleistungen."
       icon={<FaQuestionCircle className="h-10 w-10" />}
-      availableDate="Q2 2025"
       listItems={[
         "Informationen zu unseren verschiedenen Tarifen und deren Vorteile",
         "Antworten zu Abrechnungen und Zahlungsmöglichkeiten",

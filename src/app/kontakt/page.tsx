@@ -14,7 +14,6 @@ const KontaktPage = () => {
       title="Kontakt"
       description="Unsere neue Kontaktseite wird gerade entwickelt. Hier finden Sie bald alle Möglichkeiten, um mit uns in Verbindung zu treten."
       icon={<FaEnvelope className="h-10 w-10" />}
-      availableDate="Q1 2025"
       listItems={[
         "Interaktives Kontaktformular für allgemeine Anfragen",
         "Direkte Kontaktmöglichkeiten für Neu- und Bestandskunden",
