@@ -108,10 +108,10 @@ const Header = () => {
           >
             {subItem.name}
             <span
-              className={`absolute inset-x-0 -bottom-1 h-0.5 transform bg-green-500 transition-transform duration-300 ${
+              className={`absolute inset-x-0 -bottom-1 h-0.5 transform transition-transform duration-300 ${
                 isActivePath(subItem.path)
-                  ? "scale-x-100"
-                  : "scale-x-0 group-hover:scale-x-100"
+                  ? "scale-x-100 bg-[#94C11F]"
+                  : "scale-x-0 bg-[#94C11F] group-hover:scale-x-100"
               }`}
             ></span>
           </Link>
@@ -129,7 +129,7 @@ const Header = () => {
           <Link
             key={subItem.name}
             href={subItem.path || "#"}
-            className="transition-all duration-200 hover:pl-2 hover:font-medium hover:text-green-500"
+            className="transition-all duration-200 hover:pl-2 hover:font-medium hover:text-[#94C11F]"
             onClick={() => {
               setIsMenuOpen(false);
               setOpenDropdowns({});
@@ -137,7 +137,7 @@ const Header = () => {
           >
             {subItem.name}
             <span
-              className={`absolute inset-x-0 -bottom-1 h-0.5 transform bg-green-500 transition-transform duration-300 ${
+              className={`absolute inset-x-0 -bottom-1 h-0.5 transform bg-[#94C11F] transition-transform duration-300 ${
                 isActivePath(subItem.path)
                   ? "scale-x-100"
                   : "scale-x-0 group-hover:scale-x-100"
@@ -176,8 +176,8 @@ const Header = () => {
                   <button
                     className={`group relative flex items-center gap-1 px-3 py-2 text-sm font-medium transition-all duration-300 ${
                       openDropdowns[item.name]
-                        ? "font-semibold text-green-500"
-                        : "text-white hover:text-green-500"
+                        ? "font-semibold text-[#94C11F]"
+                        : "text-white hover:text-[#7A9F19]"
                     }`}
                     onClick={() => toggleDropdown(item.name)}
                   >
@@ -188,7 +188,7 @@ const Header = () => {
                     )}
                     {item.name}
                     <span
-                      className={`absolute inset-x-3 -bottom-1 h-0.5 transform bg-green-500 transition-transform duration-300 ${
+                      className={`absolute inset-x-3 -bottom-1 h-0.5 transform bg-[#94C11F] transition-transform duration-300 ${
                         openDropdowns[item.name]
                           ? "scale-x-100"
                           : "scale-x-0 group-hover:scale-x-100"
@@ -200,13 +200,13 @@ const Header = () => {
                     href={item.path || "#"}
                     className={`group relative px-3 py-2 text-sm font-medium transition-all duration-300 ${
                       isActivePath(item.path)
-                        ? "bg-green-50 font-semibold text-green-500"
-                        : "text-white hover:text-green-500"
+                        ? "bg-green-50 font-semibold text-[#94C11F]"
+                        : "text-white hover:text-[#7A9F19]"
                     }`}
                   >
                     {item.name}
                     <span
-                      className={`absolute inset-x-3 -bottom-1 h-0.5 transform bg-green-500 transition-transform duration-300 ${
+                      className={`absolute inset-x-3 -bottom-1 h-0.5 transform bg-[#94C11F] transition-transform duration-300 ${
                         isActivePath(item.path)
                           ? "scale-x-0"
                           : "scale-x-0 group-hover:scale-x-100"
@@ -219,7 +219,7 @@ const Header = () => {
             <div className="flex flex-col items-end justify-end">
               <Link
                 href="/kundenportal"
-                className="bg-[#94C11F] px-4 py-2 text-sm text-white transition-all duration-200 hover:scale-105 hover:bg-green-700 hover:shadow-lg"
+                className="bg-[#94C11F] px-4 py-2 text-sm text-white transition-all duration-200 hover:scale-105 hover:bg-[#7A9F19] hover:shadow-lg"
               >
                 KUNDENPORTAL
               </Link>
@@ -254,14 +254,14 @@ const Header = () => {
         <div className="flex items-center gap-4">
           <Link
             href="/kundenportal"
-            className="bg-[#94C11F] px-4 py-2 text-sm text-white transition-all duration-200 hover:scale-105 hover:bg-green-700 hover:shadow-lg lg:hidden"
+            className="bg-[#94C11F] px-4 py-2 text-sm text-white transition-all duration-200 hover:scale-105 hover:bg-[#7A9F19] hover:shadow-lg lg:hidden"
           >
             KUNDENPORTAL
           </Link>
 
           {/* Mobile Menu Button */}
           <button
-            className="p-2 transition-all duration-200 hover:text-green-500 lg:hidden"
+            className="p-2 transition-all duration-200 hover:text-[#7A9F19] lg:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg
@@ -301,8 +301,8 @@ const Header = () => {
                     <button
                       className={`group relative flex items-center gap-1 px-3 py-2 text-sm font-medium transition-all duration-300 ${
                         openDropdowns[item.name]
-                          ? "font-semibold text-green-500"
-                          : "text-slate-900 hover:text-green-500"
+                          ? "font-semibold text-[#94C11F]"
+                          : "text-slate-900 hover:text-[#7A9F19]"
                       }`}
                       onClick={() => toggleDropdown(item.name)}
                     >
@@ -313,7 +313,7 @@ const Header = () => {
                       )}
                       <span>{item.name}</span>
                       <span
-                        className={`absolute inset-x-3 -bottom-1 h-0.5 transform bg-green-500 transition-transform duration-300 ${
+                        className={`absolute inset-x-3 -bottom-1 h-0.5 transform bg-[#94C11F] transition-transform duration-300 ${
                           openDropdowns[item.name]
                             ? "scale-x-100"
                             : "scale-x-0 group-hover:scale-x-100"
@@ -329,14 +329,14 @@ const Header = () => {
                     href={item.path || "#"}
                     className={`group relative px-3 py-2 text-sm font-medium transition-all duration-300 ${
                       isActivePath(item.path)
-                        ? "font-semibold text-green-500"
-                        : "text-slate-900 hover:text-green-500"
+                        ? "font-semibold text-[#94C11F]"
+                        : "text-slate-900 hover:text-[#7A9F19]"
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
                     <span
-                      className={`absolute inset-x-0 -bottom-1 h-0.5 transform bg-green-500 transition-transform duration-300 ${
+                      className={`absolute inset-x-0 -bottom-1 h-0.5 transform bg-[#94C11F] transition-transform duration-300 ${
                         isActivePath(item.path)
                           ? "scale-x-100"
                           : "scale-x-0 group-hover:scale-x-100"
