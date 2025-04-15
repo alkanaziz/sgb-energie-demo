@@ -13,7 +13,7 @@ const Sidebar = () => {
           >
             <div className="flex w-full items-center justify-center gap-4 md:justify-start md:pl-3">
               <TfiAnnouncement className="h-8 w-8 min-w-[32px]" />
-              <span className="hidden md:inline-block md:w-0 md:font-extrabold md:opacity-0 md:transition-all md:duration-500 md:ease-in-out md:group-hover:w-auto md:group-hover:opacity-100">
+              <span className="hidden overflow-hidden md:inline-block md:w-0 md:font-extrabold md:opacity-0 md:transition-all md:duration-500 md:ease-in-out md:group-hover:w-auto md:group-hover:opacity-100">
                 NEWS
               </span>
             </div>
@@ -41,7 +41,7 @@ const Sidebar = () => {
           >
             <div className="flex w-full items-center justify-center gap-4 md:justify-start md:pl-3">
               <FaRegCircleQuestion className="h-8 w-8 min-w-[32px]" />
-              <span className="hidden md:inline-block md:w-0 md:font-extrabold md:opacity-0 md:transition-all md:duration-500 md:ease-in-out md:group-hover:w-auto md:group-hover:opacity-100">
+              <span className="hidden overflow-hidden md:inline-block md:w-0 md:font-extrabold md:opacity-0 md:transition-all md:duration-500 md:ease-in-out md:group-hover:w-auto md:group-hover:opacity-100">
                 FAQ
               </span>
             </div>
