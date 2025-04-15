@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import Footer from "@/components/Footer";
+import DisclaimerWrapper from "@/components/DisclaimerWrapper";
+import DisclaimerButton from "@/components/DisclaimerButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,10 +32,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} h-screen antialiased`}
       >
-        <Header />
-        <div className="">{children}</div>
-        <Sidebar />
-        <Footer />
+        <DisclaimerWrapper>
+          <Header />
+          <div className="">{children}</div>
+          <Sidebar />
+          <Footer />
+          <DisclaimerButton />
+        </DisclaimerWrapper>
       </body>
     </html>
   );
