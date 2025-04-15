@@ -22,7 +22,7 @@ const Sidebar = () => {
 
         <div className="flex h-[56px] w-[56px] items-center justify-center md:relative md:mb-8 md:w-full">
           <Link
-            href="/contact"
+            href="/kontakt"
             className="group flex h-[56px] w-[56px] items-center justify-center rounded-full transition-all duration-500 ease-in-out md:absolute md:right-0 md:bg-gray-300 md:hover:w-40 md:hover:bg-gray-500"
           >
             <div className="flex w-full items-center justify-center gap-4 md:justify-start md:pl-3">
