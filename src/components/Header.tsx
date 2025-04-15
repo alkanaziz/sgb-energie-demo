@@ -86,6 +86,12 @@ const Header = () => {
     { name: "KARRIERE", path: "/karriere" },
   ];
 
+  // Helper function to check if a path is active
+  const isActivePath = (path: string | undefined) => {
+    if (!path) return false;
+    return pathname === path;
+  };
+
   const DropdownMenu = ({ item }: { item: MenuItem }) => {
     if (!item.subItems) return null;
 
@@ -103,7 +109,7 @@ const Header = () => {
             {subItem.name}
             <span
               className={`absolute inset-x-0 -bottom-1 h-0.5 transform bg-green-500 transition-transform duration-300 ${
-                usePathname() === subItem.path
+                isActivePath(subItem.path)
                   ? "scale-x-100"
                   : "scale-x-0 group-hover:scale-x-100"
               }`}
@@ -132,7 +138,7 @@ const Header = () => {
             {subItem.name}
             <span
               className={`absolute inset-x-0 -bottom-1 h-0.5 transform bg-green-500 transition-transform duration-300 ${
-                usePathname() === subItem.path
+                isActivePath(subItem.path)
                   ? "scale-x-100"
                   : "scale-x-0 group-hover:scale-x-100"
               }`}
@@ -193,7 +199,7 @@ const Header = () => {
                   <Link
                     href={item.path || "#"}
                     className={`group relative px-3 py-2 text-sm font-medium transition-all duration-300 ${
-                      usePathname() === item.path
+                      isActivePath(item.path)
                         ? "bg-green-50 font-semibold text-green-500"
                         : "text-white hover:text-green-500"
                     }`}
@@ -201,7 +207,7 @@ const Header = () => {
                     {item.name}
                     <span
                       className={`absolute inset-x-3 -bottom-1 h-0.5 transform bg-green-500 transition-transform duration-300 ${
-                        usePathname() === item.path
+                        isActivePath(item.path)
                           ? "scale-x-0"
                           : "scale-x-0 group-hover:scale-x-100"
                       }`}
@@ -213,7 +219,7 @@ const Header = () => {
             <div className="flex flex-col items-end justify-end">
               <Link
                 href="/kundenportal"
-                className="bg-green-600 px-4 py-2 text-sm text-white transition-all duration-200 hover:scale-105 hover:bg-green-700 hover:shadow-lg"
+                className="bg-[#94C11F] px-4 py-2 text-sm text-white transition-all duration-200 hover:scale-105 hover:bg-green-700 hover:shadow-lg"
               >
                 KUNDENPORTAL
               </Link>
@@ -248,7 +254,7 @@ const Header = () => {
         <div className="flex items-center gap-4">
           <Link
             href="/kundenportal"
-            className="rounded-md bg-green-600 px-4 py-2 text-sm text-white transition-all duration-200 hover:scale-105 hover:bg-green-700 hover:shadow-lg lg:hidden"
+            className="bg-[#94C11F] px-4 py-2 text-sm text-white transition-all duration-200 hover:scale-105 hover:bg-green-700 hover:shadow-lg lg:hidden"
           >
             KUNDENPORTAL
           </Link>
@@ -322,7 +328,7 @@ const Header = () => {
                   <Link
                     href={item.path || "#"}
                     className={`group relative px-3 py-2 text-sm font-medium transition-all duration-300 ${
-                      usePathname() === item.path
+                      isActivePath(item.path)
                         ? "font-semibold text-green-500"
                         : "text-slate-900 hover:text-green-500"
                     }`}
@@ -331,7 +337,7 @@ const Header = () => {
                     {item.name}
                     <span
                       className={`absolute inset-x-0 -bottom-1 h-0.5 transform bg-green-500 transition-transform duration-300 ${
-                        usePathname() === item.path
+                        isActivePath(item.path)
                           ? "scale-x-100"
                           : "scale-x-0 group-hover:scale-x-100"
                       }`}
