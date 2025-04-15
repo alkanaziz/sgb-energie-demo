@@ -112,7 +112,7 @@ const VideoCard = ({
 
   return (
     <div
-      className={`video-container relative z-10 bg-slate-900 flex ${isVideo3 ? "flex-col md:col-span-2 md:flex-row" : "flex-col"} overflow-hidden shadow-lg`}
+      className={`video-container relative z-10 flex bg-slate-900 ${isVideo3 ? "flex-col md:col-span-2 md:flex-row" : "flex-col"} overflow-hidden shadow-lg`}
     >
       <div className={`video w-full`}>
         <div className="relative">
@@ -177,7 +177,7 @@ const VideoGallery = () => {
   };
 
   return (
-    <div className="all-videos mt-4 w-full bg-white">
+    <div className="all-videos my-4 w-full bg-white">
       <div className="w-full">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {videoData.map((video) => (
