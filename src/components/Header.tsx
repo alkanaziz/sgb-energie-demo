@@ -71,16 +71,13 @@ const Header = () => {
     {
       name: "UNTERNEHMEN",
       subItems: [
-        { name: "Vision | Vorteile", path: "/unternehmen/vision" },
-        { name: "Connect GmbH", path: "/unternehmen/connect" },
-        { name: "Energie GmbH", path: "/unternehmen/energie" },
-        { name: "Energiehandel GmbH", path: "/unternehmen/energiehandel" },
-        { name: "Solution GmbH", path: "/unternehmen/solution" },
-        { name: "Metering GmbH", path: "/unternehmen/metering" },
-        {
-          name: "Shared Services Center GmbH",
-          path: "/unternehmen/shared-services",
-        },
+        { name: "Vision | Vorteile", path: "/#" },
+        { name: "Connect GmbH", path: "/#" },
+        { name: "Energie GmbH", path: "/#" },
+        { name: "Energiehandel GmbH", path: "/#" },
+        { name: "Solution GmbH", path: "/#" },
+        { name: "Metering GmbH", path: "/#" },
+        { name: "Shared Services Center GmbH", path: "/#" },
       ],
     },
     { name: "KARRIERE", path: "/karriere" },
@@ -218,7 +215,7 @@ const Header = () => {
             ))}
             <div className="flex flex-col items-end justify-end">
               <Link
-                href="/kundenportal"
+                href="/#"
                 className="bg-[#94C11F] px-4 py-2 text-sm text-white transition-all duration-200 hover:scale-105 hover:bg-[#7A9F19] hover:shadow-lg"
               >
                 KUNDENPORTAL
@@ -253,7 +250,7 @@ const Header = () => {
 
         <div className="flex items-center gap-4">
           <Link
-            href="/kundenportal"
+            href="/#"
             className="bg-[#94C11F] px-4 py-2 text-sm text-white transition-all duration-200 hover:scale-105 hover:bg-[#7A9F19] hover:shadow-lg lg:hidden"
           >
             KUNDENPORTAL
